@@ -1,147 +1,110 @@
-#everything {
-  margin: auto;
-  display: grid;
-  height: 700px;
-  max-width: 960px;
-  grid-template-rows: 1fr 6fr; 
+
+@media only screen and (max-width: 400px){
+header {
+  min-height: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(111, 238, 26);
+}
+
+aside {
+  min-height: 14vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(36, 95, 113);
+}
+
+#c, #d {
+  width: 100%;
+  min-height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
-#bc {
-  display: grid;
-  grid-template-columns: 200px 760px;
+#efgh {
+  width: 100%;
+  min-height: 48vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#e, #f, #h, #g {
+  width: 50%;
+  text-align: center;
+  
 }
 
-#everythingelse {
-  display: grid;
-  grid-template-rows: 200px 250px 150px;
-  grid-template-rows: 33.33% 41.66% 25%;
-}
-#cd {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-#efgh{
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-
-#a {
-  line-height: 100px;
-}
-#b {
-  line-height: 600px;
-}
-#c, #d {
-  line-height: 200px;
-}
-#e, #f, #g, #h {
-  line-height: 250px;
-}
 #i {
-  line-height: 150px;
+  min-height: 8vh;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(111, 238, 26);
 }
-@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 401px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+  }
+
   #everything {
-    display: grid;
-    max-width: 480px;
-    height: 1060px;
-    grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
-    /*grid-template-columns: 1fr;*/
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 85%;
+  }
+  header {
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(111, 238, 26);
   }
   
-  #a {
-    width: 480px;
-    height: 75px;
-    line-height: 75px;
-  }
-  #bc {  
-    width: 480px;
-  }
-  /*
-  #bc{
-    display: grid;
-    grid-row-start: 2;
-    grid-template-rows: 150px 830px;
-    width: 480px;
-  }
-  */
-  #b{
-    display: grid;
-    grid-row: 2 / 3;
-    width: 480px;
-    height: 150px;
-    line-height: 150px;
-  }
-  /*
-  #everythingelse{
-    grid-row-start: 3;
-    display: grid;
-    width: 480px;
-    height: 835px;
+  aside {
+    width: 25%;
+    background-color: rgb(36, 95, 113);
   }
 
-  #cd{
-    display: grid;
-    height: 250px;
-    width: 480px;
-    }
-  */
-  #c{
-    display: grid;
-    grid-row: 3 / 4;
-    height: 125px;
-    width: 480px;
-    line-height: 125px;
+  #everythingelse {
+    width: 80%;
+    height: 85%;
+  }
+  #cd {
+    display: flex;
+    flex-direction: row;
+    min-height: 31vh;
+  }
+  #c, #d {
+    width: 50%; 
+  }
+  #efgh {
+    display: flex;
+    flex-direction: row;
+    min-height: 40vh;
+    line-height: 40vh;
   }
 
-  #d{
-    grid-row: 4 / 5;
-    height: 125px;
-    width: 480px;
-    line-height: 125px;
-  }
-  /*
-  #efgh{
-    margin-right: 0px;
-    margin-left: 0px;
-    height: 500px;
-    width: 480px;
-    overflow: hidden;
-  }
-  
-  #e{
-    height: 250px;
-    width: 240px;
-    float: left;
-    line-height: 250px;
-  }
-  
-  #f{
-    height: 250px;
-    width: 240px;
-    float: left;
-    line-height: 250px;
+  #e, #f, #g, #h {
+    width: 25%;
   }
 
-  #g{
-    height: 250px;
-    width: 240px;
-    float: left;
-    line-height: 250px;
+  #i {
+    min-height: 24vh;
+    justify-content: center;
+    text-align: center;
+    line-height: 24vh;
+    background-color: rgb(111, 238, 26);
   }
-
-  #h{
-    height: 250px;
-    width: 240px;
-    float: left;
-    line-height: 250px;
-  }
-  
-  #i{
-    height: 80px;
-    width: 480px;
-    line-height: 80px;
-  }
-  */
 }
